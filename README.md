@@ -1,2 +1,5 @@
-# CptS-479_Mobile_Application_Development
+CptS 479 - Mobile Application Development
+==============
+Instructor: Larry Holder - Spring 2017
+--------------
 Repository containing my programming assignments from CptS 479.
