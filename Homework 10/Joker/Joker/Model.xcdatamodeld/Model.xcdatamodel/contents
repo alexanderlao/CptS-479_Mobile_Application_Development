@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DataJoke" representedClassName="DataJoke" syncable="YES" codeGenerationType="class">
+        <attribute name="answerLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thirdLine" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataJoke" positionX="-243" positionY="-297" width="128" height="103"/>
+    </elements>
+</model>

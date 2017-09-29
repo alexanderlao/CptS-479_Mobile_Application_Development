@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110B34C21E8B4B3C00D802DE /* failImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 110B34C01E8B4B3C00D802DE /* failImage.png */; };
+		110B34C31E8B4B3C00D802DE /* passImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 110B34C11E8B4B3C00D802DE /* passImage.png */; };
+		111846971E88A32300A5BB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111846961E88A32300A5BB8D /* AppDelegate.swift */; };
+		111846991E88A32300A5BB8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111846981E88A32300A5BB8D /* ViewController.swift */; };
+		1118469C1E88A32300A5BB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1118469A1E88A32300A5BB8D /* Main.storyboard */; };
+		1118469E1E88A32300A5BB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1118469D1E88A32300A5BB8D /* Assets.xcassets */; };
+		111846A11E88A32300A5BB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1118469F1E88A32300A5BB8D /* LaunchScreen.storyboard */; };
+		111846A91E88B31100A5BB8D /* FindBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111846A81E88B31100A5BB8D /* FindBarViewController.swift */; };
+		11F4025C1E8A1CF50097AD02 /* JokeFuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4025B1E8A1CF50097AD02 /* JokeFuViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110B34C01E8B4B3C00D802DE /* failImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failImage.png; sourceTree = "<group>"; };
+		110B34C11E8B4B3C00D802DE /* passImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passImage.png; sourceTree = "<group>"; };
+		111846931E88A32300A5BB8D /* JokeBarBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeBarBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		111846961E88A32300A5BB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		111846981E88A32300A5BB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1118469B1E88A32300A5BB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1118469D1E88A32300A5BB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		111846A01E88A32300A5BB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		111846A21E88A32300A5BB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111846A81E88B31100A5BB8D /* FindBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindBarViewController.swift; sourceTree = "<group>"; };
+		11F4025B1E8A1CF50097AD02 /* JokeFuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeFuViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		111846901E88A32200A5BB8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1118468A1E88A32200A5BB8D = {
+			isa = PBXGroup;
+			children = (
+				111846951E88A32300A5BB8D /* JokeBarBuddy */,
+				111846941E88A32300A5BB8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		111846941E88A32300A5BB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				111846931E88A32300A5BB8D /* JokeBarBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		111846951E88A32300A5BB8D /* JokeBarBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				111846961E88A32300A5BB8D /* AppDelegate.swift */,
+				111846981E88A32300A5BB8D /* ViewController.swift */,
+				1118469A1E88A32300A5BB8D /* Main.storyboard */,
+				11F4025B1E8A1CF50097AD02 /* JokeFuViewController.swift */,
+				110B34C01E8B4B3C00D802DE /* failImage.png */,
+				110B34C11E8B4B3C00D802DE /* passImage.png */,
+				111846A81E88B31100A5BB8D /* FindBarViewController.swift */,
+				1118469D1E88A32300A5BB8D /* Assets.xcassets */,
+				1118469F1E88A32300A5BB8D /* LaunchScreen.storyboard */,
+				111846A21E88A32300A5BB8D /* Info.plist */,
+			);
+			path = JokeBarBuddy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		111846921E88A32200A5BB8D /* JokeBarBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111846A51E88A32300A5BB8D /* Build configuration list for PBXNativeTarget "JokeBarBuddy" */;
+			buildPhases = (
+				1118468F1E88A32200A5BB8D /* Sources */,
+				111846901E88A32200A5BB8D /* Frameworks */,
+				111846911E88A32200A5BB8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JokeBarBuddy;
+			productName = JokeBarBuddy;
+			productReference = 111846931E88A32300A5BB8D /* JokeBarBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1118468B1E88A32200A5BB8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Alexander Lao";
+				TargetAttributes = {
+					111846921E88A32200A5BB8D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1118468E1E88A32200A5BB8D /* Build configuration list for PBXProject "JokeBarBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1118468A1E88A32200A5BB8D;
+			productRefGroup = 111846941E88A32300A5BB8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				111846921E88A32200A5BB8D /* JokeBarBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		111846911E88A32200A5BB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111846A11E88A32300A5BB8D /* LaunchScreen.storyboard in Resources */,
+				1118469E1E88A32300A5BB8D /* Assets.xcassets in Resources */,
+				110B34C31E8B4B3C00D802DE /* passImage.png in Resources */,
+				1118469C1E88A32300A5BB8D /* Main.storyboard in Resources */,
+				110B34C21E8B4B3C00D802DE /* failImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1118468F1E88A32200A5BB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F4025C1E8A1CF50097AD02 /* JokeFuViewController.swift in Sources */,
+				111846991E88A32300A5BB8D /* ViewController.swift in Sources */,
+				111846971E88A32300A5BB8D /* AppDelegate.swift in Sources */,
+				111846A91E88B31100A5BB8D /* FindBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1118469A1E88A32300A5BB8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1118469B1E88A32300A5BB8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1118469F1E88A32300A5BB8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111846A01E88A32300A5BB8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		111846A31E88A32300A5BB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		111846A41E88A32300A5BB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		111846A61E88A32300A5BB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JokeBarBuddy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CptS479.JokeBarBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		111846A71E88A32300A5BB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JokeBarBuddy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CptS479.JokeBarBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1118468E1E88A32200A5BB8D /* Build configuration list for PBXProject "JokeBarBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111846A31E88A32300A5BB8D /* Debug */,
+				111846A41E88A32300A5BB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111846A51E88A32300A5BB8D /* Build configuration list for PBXNativeTarget "JokeBarBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111846A61E88A32300A5BB8D /* Debug */,
+				111846A71E88A32300A5BB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1118468B1E88A32200A5BB8D /* Project object */;
+}

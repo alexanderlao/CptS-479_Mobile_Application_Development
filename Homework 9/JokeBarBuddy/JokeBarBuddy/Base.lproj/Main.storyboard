@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kjQ-Ju-rFc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JokeBarBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-m3-Tkv">
+                                <rect key="frame" x="159" y="102" width="57" height="30"/>
+                                <state key="normal" title="Find Bar"/>
+                                <connections>
+                                    <segue destination="IVD-4R-lRX" kind="show" id="mR6-vm-wUc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0d-gZ-8Fy">
+                                <rect key="frame" x="135" y="140" width="104" height="30"/>
+                                <state key="normal" title="Check Joke-Fu"/>
+                                <connections>
+                                    <segue destination="bMx-M1-uFe" kind="show" id="ew0-aA-yIt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhW-j1-z9J">
+                                <rect key="frame" x="157" y="178" width="61" height="30"/>
+                                <state key="normal" title="Get Joke"/>
+                                <connections>
+                                    <action selector="getJokeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ob9-VQ-i2O"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8f-yq-oUN">
+                                <rect key="frame" x="152" y="263" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg0-6d-yOw">
+                                <rect key="frame" x="140" y="292" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg6-A0-vqE">
+                                <rect key="frame" x="149" y="321" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXo-m0-sY4">
+                                <rect key="frame" x="141" y="375" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u8f-yq-oUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0GZ-kl-gGg"/>
+                            <constraint firstItem="q0d-gZ-8Fy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6cM-yr-bSr"/>
+                            <constraint firstItem="u8f-yq-oUN" firstAttribute="top" secondItem="ZhW-j1-z9J" secondAttribute="bottom" constant="55" id="Izu-KY-KIW"/>
+                            <constraint firstItem="Hg6-A0-vqE" firstAttribute="top" secondItem="qg0-6d-yOw" secondAttribute="bottom" constant="8" id="KXI-dV-FcP"/>
+                            <constraint firstItem="q0d-gZ-8Fy" firstAttribute="top" secondItem="fNc-m3-Tkv" secondAttribute="bottom" constant="8" id="RdE-b5-ZoB"/>
+                            <constraint firstItem="TXo-m0-sY4" firstAttribute="top" secondItem="Hg6-A0-vqE" secondAttribute="bottom" constant="33" id="T3f-XO-LK3"/>
+                            <constraint firstItem="fNc-m3-Tkv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aiZ-yV-Oiv"/>
+                            <constraint firstItem="fNc-m3-Tkv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dLz-vf-1gk"/>
+                            <constraint firstItem="qg0-6d-yOw" firstAttribute="top" secondItem="u8f-yq-oUN" secondAttribute="bottom" constant="8" id="gxh-O3-FiM"/>
+                            <constraint firstItem="Hg6-A0-vqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJw-1m-oAm"/>
+                            <constraint firstItem="TXo-m0-sY4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8e-2l-tLy"/>
+                            <constraint firstItem="ZhW-j1-z9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAO-vO-Gzw"/>
+                            <constraint firstItem="qg0-6d-yOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xHh-sN-5yW"/>
+                            <constraint firstItem="ZhW-j1-z9J" firstAttribute="top" secondItem="q0d-gZ-8Fy" secondAttribute="bottom" constant="8" id="yex-4f-LaJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" prompt="Joke Bar Buddy" id="3NT-F9-1Zi"/>
+                    <connections>
+                        <outlet property="answerLine" destination="TXo-m0-sY4" id="O1B-4S-K8B"/>
+                        <outlet property="firstJokeLine" destination="u8f-yq-oUN" id="9YO-sE-DnM"/>
+                        <outlet property="secondJokeLine" destination="qg0-6d-yOw" id="S80-rn-c3b"/>
+                        <outlet property="thirdJokeLine" destination="Hg6-A0-vqE" id="UR7-Mq-Hfv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="777"/>
+        </scene>
+        <!--Check Joke-Fu-->
+        <scene sceneID="cQq-HF-YCO">
+            <objects>
+                <viewController id="bMx-M1-uFe" customClass="JokeFuViewController" customModule="JokeBarBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nF4-6r-QHh"/>
+                        <viewControllerLayoutGuide type="bottom" id="UGa-PH-dLh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tqN-hu-OUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a straight line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1T-7b-y4u">
+                                <rect key="frame" x="114" y="102" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from the start location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emf-AB-SER">
+                                <rect key="frame" x="102" y="131" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to the finish location." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u8-ES-dzz">
+                                <rect key="frame" x="107" y="160" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-iy-eb0">
+                                <rect key="frame" x="16" y="229" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqF-hP-CM7">
+                                <rect key="frame" x="306" y="229" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obt-Fn-u4V">
+                                <rect key="frame" x="41" y="508" width="292" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="T2S-qM-uv4"/>
+                                    <constraint firstAttribute="width" constant="292" id="zUt-dS-SMn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LN-FZ-dOD">
+                                <rect key="frame" x="151" y="629" width="72" height="30"/>
+                                <state key="normal" title="Try Again?"/>
+                                <connections>
+                                    <action selector="tryAgainTapped:" destination="bMx-M1-uFe" eventType="touchUpInside" id="Wv9-bU-R1j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4LN-FZ-dOD" firstAttribute="top" secondItem="obt-Fn-u4V" secondAttribute="bottom" constant="25" id="2Jb-K1-033"/>
+                            <constraint firstItem="oqF-hP-CM7" firstAttribute="trailing" secondItem="tqN-hu-OUa" secondAttribute="trailingMargin" id="69T-lJ-idu"/>
+                            <constraint firstItem="emf-AB-SER" firstAttribute="top" secondItem="a1T-7b-y4u" secondAttribute="bottom" constant="8" id="BMj-Vk-RLO"/>
+                            <constraint firstItem="obt-Fn-u4V" firstAttribute="centerX" secondItem="tqN-hu-OUa" secondAttribute="centerX" id="Dgq-oW-LzM"/>
+                            <constraint firstItem="iRD-iy-eb0" firstAttribute="leading" secondItem="tqN-hu-OUa" secondAttribute="leadingMargin" id="FvA-UN-3VE"/>
+                            <constraint firstItem="2u8-ES-dzz" firstAttribute="top" secondItem="emf-AB-SER" secondAttribute="bottom" constant="8" id="GyR-yQ-rr0"/>
+                            <constraint firstItem="emf-AB-SER" firstAttribute="centerX" secondItem="tqN-hu-OUa" secondAttribute="centerX" id="NIX-hG-8aT"/>
+                            <constraint firstItem="iRD-iy-eb0" firstAttribute="top" secondItem="2u8-ES-dzz" secondAttribute="bottom" constant="48" id="QFd-GF-5bu"/>
+                            <constraint firstItem="UGa-PH-dLh" firstAttribute="top" secondItem="4LN-FZ-dOD" secondAttribute="bottom" constant="8" id="USJ-PX-30k"/>
+                            <constraint firstItem="4LN-FZ-dOD" firstAttribute="centerX" secondItem="tqN-hu-OUa" secondAttribute="centerX" id="XeB-qW-l7d"/>
+                            <constraint firstItem="a1T-7b-y4u" firstAttribute="centerX" secondItem="tqN-hu-OUa" secondAttribute="centerX" id="c4J-hk-LEq"/>
+                            <constraint firstItem="oqF-hP-CM7" firstAttribute="top" secondItem="2u8-ES-dzz" secondAttribute="bottom" constant="48" id="stD-uw-xtK"/>
+                            <constraint firstItem="2u8-ES-dzz" firstAttribute="centerX" secondItem="tqN-hu-OUa" secondAttribute="centerX" id="y0k-Xl-NKI"/>
+                            <constraint firstItem="a1T-7b-y4u" firstAttribute="top" secondItem="nF4-6r-QHh" secondAttribute="bottom" constant="8" id="yng-Xa-vop"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Check Joke-Fu" prompt="Joke Bar Buddy" id="Hev-jv-7I6"/>
+                    <connections>
+                        <outlet property="finishLabel" destination="oqF-hP-CM7" id="r3P-Kd-O7O"/>
+                        <outlet property="passFailImage" destination="obt-Fn-u4V" id="NER-tW-JPJ"/>
+                        <outlet property="startLabel" destination="iRD-iy-eb0" id="oZt-XO-qmv"/>
+                        <outlet property="tryAgainButton" destination="4LN-FZ-dOD" id="7ZG-Z6-5nw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdy-m7-Y6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="1066.4167916041979"/>
+        </scene>
+        <!--Find Bar-->
+        <scene sceneID="LRt-Q4-oN7">
+            <objects>
+                <viewController id="IVD-4R-lRX" customClass="FindBarViewController" customModule="JokeBarBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="32L-Xf-9wj"/>
+                        <viewControllerLayoutGuide type="bottom" id="iP0-oP-lVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SJV-Yf-3MD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9y-02-IjX">
+                                <rect key="frame" x="16" y="102" width="343" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="FMM-aC-fyA"/>
+                                    <constraint firstAttribute="height" constant="501" id="nmB-mV-DAs"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FR-cx-ojt">
+                                <rect key="frame" x="124" y="617" width="126" height="30"/>
+                                <state key="normal" title="Show Nearby Bars"/>
+                                <connections>
+                                    <action selector="showBarsTapped:" destination="IVD-4R-lRX" eventType="touchUpInside" id="qY9-IR-a6Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L9y-02-IjX" firstAttribute="leading" secondItem="SJV-Yf-3MD" secondAttribute="leadingMargin" id="3Ch-ZC-Osc"/>
+                            <constraint firstItem="2FR-cx-ojt" firstAttribute="centerX" secondItem="L9y-02-IjX" secondAttribute="centerX" id="E6Z-nv-HyG"/>
+                            <constraint firstItem="L9y-02-IjX" firstAttribute="trailing" secondItem="SJV-Yf-3MD" secondAttribute="trailingMargin" id="NBn-Z7-dXc"/>
+                            <constraint firstItem="iP0-oP-lVt" firstAttribute="top" secondItem="2FR-cx-ojt" secondAttribute="bottom" constant="20" id="UOG-QV-ICO"/>
+                            <constraint firstItem="iP0-oP-lVt" firstAttribute="top" secondItem="L9y-02-IjX" secondAttribute="bottom" constant="64" id="iCu-qn-fV2"/>
+                            <constraint firstItem="L9y-02-IjX" firstAttribute="top" secondItem="32L-Xf-9wj" secondAttribute="bottom" constant="8" id="o41-8X-Fyt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Bar" prompt="Joke Bar Buddy" id="brJ-8E-ice"/>
+                    <connections>
+                        <outlet property="mapView" destination="L9y-02-IjX" id="7b2-Ye-adW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycc-Nn-0Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zop-Qg-l74">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kjQ-Ju-rFc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hFD-mJ-qLm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nb4-uX-DYC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oB7-8b-7tW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+</document>
