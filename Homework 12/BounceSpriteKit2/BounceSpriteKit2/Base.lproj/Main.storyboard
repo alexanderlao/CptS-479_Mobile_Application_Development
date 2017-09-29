@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="BounceSpriteKit2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="NQC-fb-W38" kind="show" identifier="toSettings" id="mHm-UU-Vur"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ksa-Ct-AEK">
+            <objects>
+                <viewController id="NQC-fb-W38" customClass="SettingsViewController" customModule="BounceSpriteKit2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yc-L1-D6S"/>
+                        <viewControllerLayoutGuide type="bottom" id="2cJ-by-9GD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCk-aw-GD2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxE-AW-npu">
+                                <rect key="frame" x="155" y="20" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-bs-WKp">
+                                <rect key="frame" x="310" y="76" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundEffectsSwitched:" destination="NQC-fb-W38" eventType="valueChanged" id="UFK-gO-R2u"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Effects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5s-2r-3A5">
+                                <rect key="frame" x="16" y="81" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ed-hR-ugc">
+                                <rect key="frame" x="310" y="115" width="51" height="31"/>
+                                <connections>
+                                    <action selector="backgroundMusicSwitched:" destination="NQC-fb-W38" eventType="valueChanged" id="ZIO-QC-o1N"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3W-Hd-B0o">
+                                <rect key="frame" x="16" y="120" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwW-Dw-LEY">
+                                <rect key="frame" x="169" y="176" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="NQC-fb-W38" eventType="touchUpInside" id="GOv-hu-Onj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oxE-AW-npu" firstAttribute="top" secondItem="2yc-L1-D6S" secondAttribute="bottom" id="2QU-fK-36e"/>
+                            <constraint firstItem="f5s-2r-3A5" firstAttribute="top" secondItem="oxE-AW-npu" secondAttribute="bottom" constant="40" id="9qo-2d-QPB"/>
+                            <constraint firstItem="oxE-AW-npu" firstAttribute="centerX" secondItem="eCk-aw-GD2" secondAttribute="centerX" id="G1V-bd-fJz"/>
+                            <constraint firstItem="fwW-Dw-LEY" firstAttribute="top" secondItem="oxE-AW-npu" secondAttribute="bottom" constant="135" id="Gjz-Q8-Gjs"/>
+                            <constraint firstItem="0ed-hR-ugc" firstAttribute="trailing" secondItem="eCk-aw-GD2" secondAttribute="trailingMargin" id="PTk-Kf-uQM"/>
+                            <constraint firstItem="f5s-2r-3A5" firstAttribute="leading" secondItem="eCk-aw-GD2" secondAttribute="leadingMargin" id="WVm-cC-TMM"/>
+                            <constraint firstItem="x3W-Hd-B0o" firstAttribute="top" secondItem="f5s-2r-3A5" secondAttribute="bottom" constant="18" id="cV6-tT-t8q"/>
+                            <constraint firstItem="x3W-Hd-B0o" firstAttribute="leading" secondItem="eCk-aw-GD2" secondAttribute="leadingMargin" id="fJF-Mf-BAR"/>
+                            <constraint firstItem="Afb-bs-WKp" firstAttribute="trailing" secondItem="eCk-aw-GD2" secondAttribute="trailingMargin" id="fyr-0A-H80"/>
+                            <constraint firstItem="Afb-bs-WKp" firstAttribute="top" secondItem="oxE-AW-npu" secondAttribute="bottom" constant="35" id="ldH-0Q-JeX"/>
+                            <constraint firstItem="fwW-Dw-LEY" firstAttribute="centerX" secondItem="eCk-aw-GD2" secondAttribute="centerX" id="pIk-4F-sF9"/>
+                            <constraint firstItem="0ed-hR-ugc" firstAttribute="top" secondItem="Afb-bs-WKp" secondAttribute="bottom" constant="8" id="prJ-ru-Za5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="60L-AL-dbc"/>
+                    <connections>
+                        <outlet property="backgroundMusicSwitch" destination="0ed-hR-ugc" id="szN-XE-23d"/>
+                        <outlet property="soundEffectsSwitch" destination="Afb-bs-WKp" id="QdT-iQ-IRH"/>
+                        <segue destination="v26-8C-cOa" kind="unwind" identifier="unwindFromSettings" unwindAction="unwindFromSettingsWithSegue:" id="clq-dv-8nO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8H-gL-idI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="v26-8C-cOa" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="36"/>
+        </scene>
+    </scenes>
+</document>
